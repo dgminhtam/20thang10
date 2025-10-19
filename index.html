@@ -413,7 +413,10 @@
 				text: "Bé là món quà tuyệt vời nhất mà cuộc đời đã dành cho anh 🎁💖"
 			}
 		];
-
+        messages.forEach(item => {
+            const img = new Image();
+            img.src = item.img;
+        });
 
         let currentMessageIndex = 0;
         let hasFirstLetterFallen = false;
